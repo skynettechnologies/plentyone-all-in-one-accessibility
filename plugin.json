@@ -1,0 +1,11 @@
+{
+    "name"              :   "AllinOneAccessibility",
+    "namespace"         :   "AllinOneAccessibility",
+    "type"              :   "widget",
+    "version"           :   "1.0.0",
+    "pluginIcon"        :   "icon_plugin_xs.png",
+    "description"       :   "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!",
+    "author"            :   "Rajesh Bhimani",
+    "authorIcon"        :   "icon_author_xs.png",
+    "serviceProvider"   :   "AllinOneAccessibility\\Providers\\AllinOneAccessibilityServiceProvider"
+}
