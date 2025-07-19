@@ -8,6 +8,8 @@ use IO\Helper\ResourceContainer;
 use Plenty\Plugin\Events\Dispatcher;
 use Plenty\Plugin\Templates\Twig;
 
+use IO\Extensions\Functions\Partial;
+
 /**
  * Class AllinOneAccessibilityServiceProvider
  * @package AllinOneAccessibility\Providers
@@ -25,12 +27,19 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
  /**
      * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
      */
-    public function boot(Twig $twig, Dispatcher $eventDispatcher)
+    // public function boot(Twig $twig, Dispatcher $eventDispatcher)
+    // {
+    //     $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
+    //     {
+    //         // The style is imported in the <head> on the PageDesign.twig of plentyShop LTS
+    //         $container->addStyleTemplate('AllinOneAccessibility::Index');
+    //     }, self::PRIORITY);
+    // }
+
+        public function boot(Dispatcher $eventDispatcher)
     {
-        $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
-        {
-            // The style is imported in the <head> on the PageDesign.twig of plentyShop LTS
-            $container->addStyleTemplate('AllinOneAccessibility::Index');
-        }, self::PRIORITY);
+        $eventDispatcher->listen('IO.init.templates', function (Partial $partial) {
+            $partial->set('header', 'AllinOneAccessibility::Index');
+        }, self::EVENT_LISTENER_PRIORITY);
     }
 }
