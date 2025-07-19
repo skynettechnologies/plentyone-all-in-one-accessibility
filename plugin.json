@@ -14,9 +14,6 @@
     "email"             :   "hello@skynettechnologies.com",
     "phone"             :   "+1 810 358 8040",
     "keywords"          :   ["plentymarkets", "plugins", "layout", "template", "AllinOneAccessibility", "accessibility", "compliance", "WCAG"],
-    "require": {
-        "IO": ">=5.0.0"
-    },
     "platform": {
         "php": ">=7.3 <8.1"
     },
@@ -24,15 +21,15 @@
     "containers"        : [],
     "dataProviders": [
         {
-            "key"           :"GoogleAnalytics\\Providers\\TrackingCodeProvider",
-            "name"          :"Google Analytics tracking code",
-            "description"   :"Include Google Analytics tracking code snippet",
+            "key"           :"AllinOneAccessibility\\Providers\\TrackingCodeProvider",
+            "name"          :"All in One Accessibility Widget",
+            "description"   :"",
             "defaultLayoutContainer": "Ceres::Template.Style"
         },
         {
-            "key"           : "GoogleAnalytics\\Providers\\PurchaseEventCodeProvider",
-            "name"          : "Google Analytics purchase event code",
-            "description"   : "Include Google Analytics tracking code for purchase event",
+            "key"           : "AllinOneAccessibility\\Providers\\PurchaseEventCodeProvider",
+            "name"          : "All in One Accessibility Widget",
+            "description"   : "",
             "defaultLayoutContainer": "Ceres::Script.Loader"
         }
     ],
