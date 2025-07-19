@@ -23,14 +23,11 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
     }
 
  /**
-     * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
+     * boot twig extensions and services
+     * @param Twig $twig
+     * @param Dispatcher $dispatcher
      */
-    public function boot(Twig $twig, Dispatcher $eventDispatcher)
+    public function boot(Twig $twig, Dispatcher $dispatcher)
     {
-        $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
-        {
-            // The style is imported in the <head> on the PageDesign.twig of plentyShop LTS
-            $container->addStyleTemplate('AllinOneAccessibility::Index');
-        }, self::PRIORITY);
     }
 }

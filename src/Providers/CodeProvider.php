@@ -6,12 +6,14 @@ use Plenty\Modules\Frontend\Session\Storage\Contracts\FrontendSessionStorageFact
 use Plenty\Plugin\Templates\Twig;
 
 
-class TrackingCodeProvider
+class PurchaseEventCodeProvider
 {
     public function call( Twig $twig )
     {
+        /** @var FrontendSessionStorageFactoryContract $sessionStorage */
+        $sessionStorage = pluginApp(FrontendSessionStorageFactoryContract::class);
         return $twig->render(
-            'AllinOneAccessibility::Index'
+            'AllinOneAccessibility::Index',
         );
     }
 }
