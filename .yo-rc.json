@@ -1,12 +1,12 @@
 {
   "@plentymarkets/generator-plugin": {
     "promptValues": {
-      "type": "widget"
+      "type": "template"
     },
     "answers": {
       "name": "AllinOneAccessibility",
       "author": "Rajesh Bhimani",
-      "type": "widget",
+      "type": "template",
       "description": "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!",
       "version": "1.0.1"
     }

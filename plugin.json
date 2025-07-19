@@ -1,7 +1,7 @@
 {
     "name"              :   "AllinOneAccessibility",
     "namespace"         :   "AllinOneAccessibility",
-    "type"              :   "widget",
+    "type"              :   "template",
     "version"           :   "1.0.1",
     "pluginIcon"        :   "icon_plugin_xs.png",
     "description"       :   "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!",
