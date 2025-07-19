@@ -30,7 +30,7 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
         $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container)
         {
             // The style is imported in the <head> on the PageDesign.twig of plentyShop LTS
-            $container->addStyleTemplate('Theme::content.SingleItemStyle');
+            $container->addStyleTemplate('AllinOneAccessibility::Index');
         }, self::PRIORITY);
     }
 }
