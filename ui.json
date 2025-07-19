@@ -5,7 +5,7 @@
     {
       "label": "All in One Accessibility",
       "menu": "start",
-      "urlKey": "hello-world",
+      "urlKey": "AllinOneAccessibility",
       "entryPoint": "index.html"
     }
   ]
