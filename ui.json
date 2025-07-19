@@ -1,0 +1,12 @@
+{
+  "defaultEntryPoint": "index.html",
+  "namespace": "AllinOneAccessibility",
+  "menuEntries": [
+    {
+      "label": "All in One Accessibility",
+      "menu": "start",
+      "urlKey": "hello-world",
+      "entryPoint": "index.html"
+    }
+  ]
+}
