@@ -805,10 +805,10 @@
     //         }
 
 
-    const username = 'nicole Kidman';
-    const email = 'testnicolekidman@mailinator.com';
+    const username = '';
+    const email = '';
 
-    const domain = 'contaodemotestdemo.skynettechnologies.us';
+    const domain = window.location.hostname;
 
     function fetchApiData(website_name) {
 
@@ -911,7 +911,7 @@
     console.log("domain : " + domain);
     const defaultSettings = {
       widget_position: "bottom_right",
-      widget_color_code: "#861818",
+      widget_color_code: "#420083",
       widget_icon_type: "aioa-icon-type-1",
       widget_icon_size: "aioa-small-icon",
     };
@@ -1129,7 +1129,7 @@
         }
       });
 
-      const iconImg = `https://www.skynettechnologies.com/sites/default/files/aioa-icon-type-${settings.widget_icon_type}.svg`;
+      const iconImg = `https://www.skynettechnologies.com/sites/default/files/${settings.widget_icon_type}.svg`;
 
       $(".iconimg").attr("src", iconImg);
 
