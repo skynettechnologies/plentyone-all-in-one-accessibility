@@ -40,6 +40,6 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
     {
         $eventDispatcher->listen('IO.init.templates', function (Partial $partial) {
             $partial->set('header', 'AllinOneAccessibility::Index');
-        }, self::EVENT_LISTENER_PRIORITY);
+        }, self::PRIORITY);
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name"              :   "AllinOneAccessibility",
+    "name"              :   "All in One Accessibility",
     "namespace"         :   "AllinOneAccessibility",
     "type"              :   "template",
     "version"           :   "1.0.1",
@@ -30,7 +30,7 @@
             "defaultLayoutContainer": "Ceres::Template.Style"
         },
         {
-            "key"           : "AllinOneAccessibility\\Providers\\PurchaseEventCodeProvider",
+            "key"           : "AllinOneAccessibility\\Providers\\CodeProvider",
             "name"          : "All in One Accessibility Widget",
             "description"   : "",
             "defaultLayoutContainer": "Ceres::Script.Loader"
