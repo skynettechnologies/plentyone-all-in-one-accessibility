@@ -24,16 +24,10 @@
     "containers"        : [],
     "dataProviders": [
         {
-            "key"           :"AllinOneAccessibility\\Providers\\TrackingCodeProvider",
-            "name"          :"All in One Accessibility Widget",
-            "description"   :"",
-            "defaultLayoutContainer": "Ceres::Template.Style"
-        },
-        {
             "key"           : "AllinOneAccessibility\\Providers\\CodeProvider",
             "name"          : "All in One Accessibility Widget",
             "description"   : "",
-            "defaultLayoutContainer": "Ceres::Script.Loader"
+            "defaultLayoutContainer": "AllinOneAccessibility::Script.Loader"
         }
     ],
     "isClosedSource": true,
