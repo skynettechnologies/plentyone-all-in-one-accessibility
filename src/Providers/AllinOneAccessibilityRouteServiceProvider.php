@@ -16,6 +16,6 @@ class AllinOneAccessibilityRouteServiceProvider extends RouteServiceProvider
      */
     public function map(Router $router)
     {
-        $router->get('hello-world','AllinOneAccessibility\Controllers\AllinOneAccessibilityController@getHelloWorldPage');
+        $router->get('allinoneaccessibility','AllinOneAccessibility\Controllers\AllinOneAccessibilityController@getHelloWorldPage');
     }
 }

@@ -27,7 +27,7 @@
             "key"           : "AllinOneAccessibility\\Providers\\CodeProvider",
             "name"          : "All in One Accessibility Widget",
             "description"   : "",
-            "defaultLayoutContainer": "AllinOneAccessibility::Script.Loader"
+            "defaultLayoutContainer": "Ceres::SingleItem.AfterScriptsLoaded"
         }
     ],
     "isClosedSource": true,
