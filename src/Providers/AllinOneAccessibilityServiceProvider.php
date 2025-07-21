@@ -33,7 +33,7 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
 
         $consentRepository = pluginApp(ConsentRepositoryContract::class);
         $consentRepository->registerConsent(
-            'AllinOneAccessibility',
+            'allinoneaccessibility',
             'AllinOneAccessibility::AllinOneAccessibility.consentLabel',
             function () {
                 /** @var ConfigRepository $config */
