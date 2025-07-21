@@ -10,6 +10,12 @@ use Plenty\Plugin\Templates\Twig;
 
 use IO\Extensions\Functions\Partial;
 
+
+use Plenty\Modules\Frontend\Session\Storage\Contracts\FrontendSessionStorageFactoryContract;
+use Plenty\Modules\Order\Events\OrderCreated;
+use Plenty\Modules\Webshop\Consent\Contracts\ConsentRepositoryContract;
+use Plenty\Plugin\ConfigRepository;
+
 /**
  * Class AllinOneAccessibilityServiceProvider
  * @package AllinOneAccessibility\Providers
@@ -21,7 +27,20 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
     */
     public function register()
     {
-        $this->getApplication()->register(AllinOneAccessibilityRouteServiceProvider::class);
+        // $this->getApplication()->register(AllinOneAccessibilityRouteServiceProvider::class);
+
+              /** @var ConsentRepositoryContract $consentRepository */
+              
+        $consentRepository = pluginApp(ConsentRepositoryContract::class);
+        $consentRepository->registerConsent(
+            'AllinOneAccessibility',
+            'AllinOneAccessibility::AllinOneAccessibility.consentLabel',
+            function() {
+                /** @var ConfigRepository $config */
+                $config = pluginApp(ConfigRepository::class);
+                return  [];
+            }
+        );
     }
 
  /**
