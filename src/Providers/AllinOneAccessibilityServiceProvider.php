@@ -28,6 +28,7 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
     public function register()
     {
     }
+    
     public function boot(Twig $twig, Dispatcher $eventDispatcher)
     {
         $eventDispatcher->listen('IO.Resources.Import', function (ResourceContainer $container) {

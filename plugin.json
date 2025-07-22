@@ -1,5 +1,9 @@
 {
   "name": "AllinOneAccessibility",
+  "marketplaceName": {
+    "de": "All in One Accessibility",
+    "en": "All in One Accessibility"
+  },
   "namespace": "AllinOneAccessibility",
   "type": "template",
   "version": "1.0.1",
@@ -8,7 +12,7 @@
   "authorIcon": "icon_author_xs.png",
   "serviceProvider": "AllinOneAccessibility\\Providers\\AllinOneAccessibilityServiceProvider",
   "license": "AGPL-3.0",
-  "price": 0,
+  "price": 0.00,
   "description": "The All in One Accessibility is an AI-based accessibility tool, it improves website WCAG 2.0, 2.1, 2.2 ADA, EAA and other Global compliance standards and helps the Blind, Motor Impaired, Visually Impaired, Color Blind, Dyslexia, Cognitive and learning, Seizure & Epileptic, ADHD etc., user access website / Digital content. It supports over 140+ languages and has Addons for Document / PDF Compliance remediation, Language translation as per accessibility user needs, and other Customization. ",
   "shortDescription": {
     "de": "Website-Zugänglichkeits-Widget zur Verbesserung der WCAG 2.0-, 2.1-, 2.2- und ADA-Konformität!",

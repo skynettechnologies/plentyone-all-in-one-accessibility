@@ -10,4 +10,3 @@ Please visit our **[support page](https://www.skynettechnologies.com/report-acce
 
 Alternatively, you can send an email to our support team:
 **[hello@skynettechnologies.com](mailto:hello@skynettechnologies.com)**
-
