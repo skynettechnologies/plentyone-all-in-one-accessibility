@@ -252,4 +252,4 @@ Dieses Add-on wird von **[Skynet Technologies USA LLC](https://www.skynettechnol
 
 ## Lizenz
 
-[MIT](LICENSE) © Skynet Technologies USA LLC
+[AGPL-3.0](LICENSE) © Skynet Technologies USA LLC

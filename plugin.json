@@ -1,37 +1,50 @@
 {
-    "name"              :   "AllinOneAccessibility",
-    "namespace"         :   "AllinOneAccessibility",
-    "type"              :   "template",
-    "version"           :   "1.0.1",
-    "pluginIcon"        :   "icon_plugin_xs.png",
-    "description"       :   "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!",
-    "author"            :   "Rajesh Bhimani",
-    "authorIcon"        :   "icon_author_xs.png",
-    "serviceProvider"   :   "AllinOneAccessibility\\Providers\\AllinOneAccessibilityServiceProvider",
-    "license"           :   "MIT",
-    "price"             :   0.00,
-    "shortDescription"  :   {"en": "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!"},
-    "email"             :   "hello@skynettechnologies.com",
-    "phone"             :   "+1 810 358 8040",
-    "keywords"          :   ["plentymarkets", "plugins", "layout", "template", "AllinOneAccessibility", "accessibility", "compliance", "WCAG"],
-    "require": {
-        "IO": ">=4.6.0",
-        "Ceres": ">=4.6.0"
-    },
-    "platform": {
-        "php": ">=7.3 <8.1"
-    },
-    "javaScriptFiles"   : [],
-    "containers"        : [],
-    "dataProviders": [
-        {
-            "key"           : "AllinOneAccessibility\\Providers\\CodeProvider",
-            "name"          : "All in One Accessibility Widget",
-            "description"   : "Add All in One Accessibility Widget Code in Page Head",
-            "defaultLayoutContainer": "Ceres::Script.AfterScriptsLoaded"
-        }
-    ],
-    "isClosedSource": true,
-    "dependencies": {},
-    "runOnBuild": []
+  "name": "AllinOneAccessibility",
+  "namespace": "AllinOneAccessibility",
+  "type": "template",
+  "version": "1.0.1",
+  "pluginIcon": "icon_plugin_xs.png",
+  "author": "Rajesh Bhimani",
+  "authorIcon": "icon_author_xs.png",
+  "serviceProvider": "AllinOneAccessibility\\Providers\\AllinOneAccessibilityServiceProvider",
+  "license": "AGPL-3.0",
+  "price": 0,
+  "description": "The All in One Accessibility is an AI-based accessibility tool, it improves website WCAG 2.0, 2.1, 2.2 ADA, EAA and other Global compliance standards and helps the Blind, Motor Impaired, Visually Impaired, Color Blind, Dyslexia, Cognitive and learning, Seizure & Epileptic, ADHD etc., user access website / Digital content. It supports over 140+ languages and has Addons for Document / PDF Compliance remediation, Language translation as per accessibility user needs, and other Customization. ",
+  "shortDescription": {
+    "de": "Website-Zugänglichkeits-Widget zur Verbesserung der WCAG 2.0-, 2.1-, 2.2- und ADA-Konformität!",
+    "en": "Website accessibility widget for improving WCAG 2.0, 2.1, 2.2 and ADA compliance!"
+  },
+  "email": "hello@skynettechnologies.com",
+  "phone": "+1 810 358 8040",
+  "keywords": [
+    "plentymarkets",
+    "plugins",
+    "layout",
+    "template",
+    "AllinOneAccessibility",
+    "accessibility",
+    "compliance",
+    "WCAG"
+  ],
+  "require": {
+    "IO": ">=4.6.0",
+    "Ceres": ">=4.6.0"
+  },
+  "platform": {
+    "php": ">=7.3 <8.1"
+  },
+  "categories": ["3527"],
+  "javaScriptFiles": [],
+  "containers": [],
+  "dataProviders": [
+    {
+      "key": "AllinOneAccessibility\\Providers\\CodeProvider",
+      "name": "All in One Accessibility Widget",
+      "description": "Add All in One Accessibility Widget Code in Page Head",
+      "defaultLayoutContainer": "Ceres::Script.AfterScriptsLoaded"
+    }
+  ],
+  "isClosedSource": false,
+  "dependencies": {},
+  "runOnBuild": []
 }

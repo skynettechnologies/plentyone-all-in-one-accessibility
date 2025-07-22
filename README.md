@@ -275,4 +275,4 @@ This addon is developed and maintained by **[Skynet Technologies USA LLC](https:
 
 ## License
 
-[MIT](LICENSE) © Skynet Technologies USA LLC
+[AGPL-3.0](LICENSE) © Skynet Technologies USA LLC
