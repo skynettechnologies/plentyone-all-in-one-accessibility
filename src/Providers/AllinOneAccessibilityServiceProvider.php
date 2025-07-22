@@ -27,20 +27,6 @@ class AllinOneAccessibilityServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->getApplication()->register(AllinOneAccessibilityRouteServiceProvider::class);
-
-        /** @var ConsentRepositoryContract $consentRepository */
-
-        $consentRepository = pluginApp(ConsentRepositoryContract::class);
-        $consentRepository->registerConsent(
-            'allinoneaccessibility',
-            'AllinOneAccessibility::AllinOneAccessibility.consentLabel',
-            function () {
-                /** @var ConfigRepository $config */
-                $config = pluginApp(ConfigRepository::class);
-                return [];
-            }
-        );
     }
     public function boot(Twig $twig, Dispatcher $eventDispatcher)
     {

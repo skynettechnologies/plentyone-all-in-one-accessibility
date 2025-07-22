@@ -154,22 +154,6 @@ English (USA), English (UK), English (Australian), English (Canadian), English (
 
 ## Installation
 
-### Configuration
-
-#### Enable API Permissions
-
-1. Ensure your Strapi server is running.
-2. In the Strapi admin panel, navigate to the **Settings** section.
-3. Click on the **Users & Permissions** plugin and select **Roles**.
-4. Choose the **Public** role from the list.
-5. Locate the **all-in-one-accessibility** option in the permissions list.
-6. Check the box for **all APIs endpoints** under the **all-in-one-accessibility** option.
-7. Save your changes.
-
-### Integration Guide: Adding the Accessibility Widget
-
-To integrate the **All-in-One Accessibility** widget into your website or Strapi frontend, follow the steps below:
-
 #### Add the Script
 
 Place the following script in the **header** or **footer** section of your website or frontend:

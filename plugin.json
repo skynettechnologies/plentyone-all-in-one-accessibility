@@ -15,7 +15,8 @@
     "phone"             :   "+1 810 358 8040",
     "keywords"          :   ["plentymarkets", "plugins", "layout", "template", "AllinOneAccessibility", "accessibility", "compliance", "WCAG"],
     "require": {
-        "IO": ">=5.0.0"
+        "IO": ">=4.6.0",
+        "Ceres": ">=4.6.0"
     },
     "platform": {
         "php": ">=7.3 <8.1"
@@ -26,8 +27,8 @@
         {
             "key"           : "AllinOneAccessibility\\Providers\\CodeProvider",
             "name"          : "All in One Accessibility Widget",
-            "description"   : "",
-            "defaultLayoutContainer": "Ceres::SingleItem.AfterScriptsLoaded"
+            "description"   : "Add All in One Accessibility Widget Code in Page Head",
+            "defaultLayoutContainer": "Ceres::Script.AfterScriptsLoaded"
         }
     ],
     "isClosedSource": true,
